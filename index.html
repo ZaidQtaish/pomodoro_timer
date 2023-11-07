@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <div id='timer'>
+        <div id='container'>
+          <div id='top'>
+            <div id='label'>
+              <i class="fa-solid fa-brain fa-lg"></i> Focus
+            </div>
+          </div>
+          <div id='time'>
+            <h2 id='minutes'>25</h2>
+            <h2 id='seconds'>00</h2>
+          </div>
+          <div id='controls'>
+            <div id='settings' class='control'><i class="fa-solid fa-ellipsis fa-lg"></i></div>
+            <div id='play'><i class="fa-solid fa-play fa-lg"></i></div>
+            <div id='forward' class='control'><i class="fa-solid fa-forward fa-lg"></i></div>
+          </div>
+        </div>
+          <div id='popup' class='hidden'>
+            <div id='popup-top'>
+              <h3>Settings</h3>
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="form-check form-switch options">
+              <label class="form-check-label" for="toggle-dark">Dark mode</label>
+              <input class="form-check-input" type="checkbox" id="toggle-dark">
+      
+            </div>
+      
+            <div class='options'>
+              <label>Focus length</label>
+              <input class='change' type='number' data-type="focus" min="1" value='25'></input>
+            </div>
+      
+            <div class='options'>
+              <label>Short break length</label>
+              <input class='change form-control' type='number' data-type="short" min="1" value='5'></input>
+            </div>
+      
+            <div class='options'>
+              <label>Long break length</label>
+              <input class='change form-control' type='number' data-type="long" min="1" value='15'></input>
+            </div>
+          </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="script.js"></script>
+</body>
+</html>
